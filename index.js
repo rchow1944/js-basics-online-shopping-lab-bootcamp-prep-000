@@ -30,7 +30,7 @@ function viewCart() {
     str += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
   }
   // last item
-  return str += ` and ${cart[cart.length].itemName} at $${cart[cart.length].itemPrice}.`;
+  return str += ` and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`;
 }
 
 function total() {
