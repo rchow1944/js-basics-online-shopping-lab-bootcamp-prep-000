@@ -25,6 +25,8 @@ function viewCart() {
   for(let i = 0; i < cart.length-1; i++) {
     str += ` ${cart[i].itemName} at $${cart[i].itemPrice},`
   }
+  // last item
+  return str += ` and ${cart[cart.length].itemName} at $${cart[cart.length].itemPrice}.`;
 }
 
 function total() {
